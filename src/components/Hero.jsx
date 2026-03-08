@@ -4,12 +4,10 @@ export default function Hero() {
     return (
         <section className="relative pt-24 sm:pt-32 md:pt-42 pb-12 sm:pb-16 md:pb-20 overflow-hidden">
 
-            {/* Background Decorative Element - Responsive */}
             <div className="absolute left-1/3 md:left-120 top-0 w-[200%] sm:w-[150%] md:w-[85%] h-40 sm:h-60 md:h-100 bg-red-800 rounded-r-full rotate-150 opacity-50 md:opacity-100"></div>
 
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-10 grid md:grid-cols-2 items-center gap-8 md:gap-0">
 
-                {/* Left Content - Responsive */}
                 <div className="z-10 text-center md:text-left">
                     <p className="text-gray-600 text-lg sm:text-xl md:text-2xl">
                         Level up your Career <br className="hidden sm:block" /> with
@@ -31,17 +29,14 @@ export default function Hero() {
                     </div>
                 </div>
 
-                {/* Right Content with Form - Responsive */}
                 <div className="relative flex justify-center md:justify-end mt-8 md:mt-0">
                     
-                    {/* Hero Image - Hidden on mobile, visible on larger screens */}
                     <img
                         src={HeroIMG}
                         alt="MBA Student"
                         className="hidden lg:block absolute right-120 top-20 w-full z-10 transform -scale-x-160 scale-160"
                     />
 
-                    {/* Request Information Form - Fully Responsive */}
                     <div className="bg-white shadow-xl rounded-xl p-4 sm:p-5 md:p-6 w-full sm:w-80 md:w-90 z-20">
                         <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
                             Request Information

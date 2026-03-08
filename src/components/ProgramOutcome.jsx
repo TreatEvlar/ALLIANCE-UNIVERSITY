@@ -33,7 +33,6 @@ export default function ProgramOutcome() {
   return (
     <section className="relative py-12 sm:py-16 md:py-20 px-4 sm:px-6 max-w-7xl mx-auto overflow-hidden">
       
-      {/* Header with responsive lines */}
       <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4 mb-10 sm:mb-12">
         <hr className="flex-1 max-w-15 sm:max-w-25 md:max-w-40 border-t-2 border-gray-300 hidden sm:block" />
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#0A192F] flex flex-wrap items-center justify-center gap-1 sm:gap-2">
@@ -42,10 +41,8 @@ export default function ProgramOutcome() {
         <hr className="flex-1 max-w-15 sm:max-w-25 md:max-w-40 border-t-2 border-gray-300 hidden sm:block" />
       </div>
 
-      {/* Desktop Layout - exactly as original (lg and above) */}
       <div className="hidden lg:grid lg:grid-cols-3 gap-8 items-center">
         
-        {/* Left side - Outcomes Grid */}
         <div className="lg:col-span-2 grid grid-cols-2 gap-6">
           {outcomes.map((o, i) => (
             <div
@@ -63,22 +60,18 @@ export default function ProgramOutcome() {
             </div>
           ))}
           
-          {/* Decorative bar - exactly as original (only visible on desktop) */}
           <div className="col-span-2 mt-4 justify-start absolute top-197 lg:block hidden">
             <div className="w-300 h-10 bg-gray-700 rounded-l-full"></div>
           </div>
         </div>
 
-        {/* Right side - Image */}
         <div className="relative flex justify-center items-center h-full min-h-100">
           <img src={BOY} alt="" className='w-100'/>
         </div>
       </div>
 
-      {/* Mobile/Tablet Layout - below lg */}
       <div className="lg:hidden flex flex-col gap-8">
         
-        {/* Image first on mobile/tablet */}
         <div className="relative flex justify-center items-center">
           <img 
             src={BOY} 
@@ -87,7 +80,6 @@ export default function ProgramOutcome() {
           />
         </div>
 
-        {/* Outcomes Grid - responsive columns */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5 md:gap-6">
           {outcomes.map((o, i) => (
             <div
@@ -108,7 +100,6 @@ export default function ProgramOutcome() {
           ))}
         </div>
 
-        {/* Decorative bar for mobile/tablet - REMOVED completely */}
       </div>
     </section>
   );

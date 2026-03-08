@@ -4,7 +4,6 @@ export default function AboutUs() {
   return (
     <section className="py-12 sm:py-16 md:py-20 bg-gray-100 px-4 sm:px-6 md:px-8 lg:px-10 text-center overflow-hidden">
 
-      {/* Header with responsive lines */}
       <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4 mb-10 sm:mb-12">
           <hr className="flex-1 max-w-15 sm:max-w-25 md:max-w-40 border-t-2 border-gray-300 hidden sm:block" />
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#0A192F] flex flex-wrap items-center justify-center gap-1 sm:gap-2">
@@ -13,7 +12,6 @@ export default function AboutUs() {
           <hr className="flex-1 max-w-15 sm:max-w-25 md:max-w-40 border-t-2 border-gray-300 hidden sm:block" />
         </div>
 
-      {/* Description with responsive text */}
       <div className="max-w-4xl mx-auto px-2 sm:px-4">
         <p className="text-gray-700 leading-relaxed text-sm sm:text-base md:text-lg lg:text-xl mb-8 sm:mb-10 md:mb-12">
           At Alliance Online, we are redefining the future of higher education
@@ -32,7 +30,6 @@ export default function AboutUs() {
         </p>
       </div>
 
-      {/* Image with overlay effect and caption */}
       <div className="mt-8 sm:mt-10 md:mt-12 w-full relative group">
         <img
           src={campus}

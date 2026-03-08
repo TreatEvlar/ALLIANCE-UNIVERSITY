@@ -6,7 +6,6 @@ export default function VisionMission() {
     <section className="w-full bg-white py-12 sm:py-16 px-4 sm:px-6 md:px-8 overflow-hidden">
       <div className="max-w-5xl mx-auto">
 
-        {/* Header with responsive lines */}
         <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4 mb-10 sm:mb-12">
           <hr className="flex-1 max-w-15 sm:max-w-25 md:max-w-40 border-t-2 border-gray-300 hidden sm:block" />
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#0A192F] flex flex-wrap items-center justify-center gap-1 sm:gap-2">
@@ -15,19 +14,15 @@ export default function VisionMission() {
           <hr className="flex-1 max-w-15 sm:max-w-25 md:max-w-40 border-t-2 border-gray-300 hidden sm:block" />
         </div>
 
-        {/* Grid Layout */}
         <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
 
-          {/* Vision Card */}
           <div className="relative mt-12 sm:mt-14 md:mt-16">
-            {/* Icon Circle - Responsive positioning */}
             <div className="absolute left-1/2 transform -translate-x-1/2 -top-10 sm:-top-11 md:-top-12 z-10">
               <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-white rounded-full shadow-lg flex items-center justify-center border-2 border-gray-300 hover:shadow-xl transition-shadow duration-300">
                 <PiBinoculars className="text-red-800 text-3xl sm:text-4xl md:text-5xl" />
               </div>
             </div>
 
-            {/* Content Card */}
             <div className="bg-blue-950 rounded-xl sm:rounded-2xl shadow-xl p-5 sm:p-6 md:p-8 pt-12 sm:pt-14 md:pt-16 text-white text-center h-full flex flex-col">
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4">
                 Vision
@@ -42,16 +37,13 @@ export default function VisionMission() {
             </div>
           </div>
 
-          {/* Mission Card */}
           <div className="relative mt-12 sm:mt-14 md:mt-16">
-            {/* Icon Circle - Responsive positioning */}
             <div className="absolute left-1/2 transform -translate-x-1/2 -top-10 sm:-top-11 md:-top-12 z-10">
               <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-white rounded-full shadow-lg flex items-center justify-center border-2 border-gray-300 hover:shadow-xl transition-shadow duration-300">
                 <FaBullseye className="text-blue-950 text-3xl sm:text-4xl md:text-5xl" />
               </div>
             </div>
 
-            {/* Content Card */}
             <div className="bg-red-800 rounded-xl sm:rounded-2xl shadow-xl p-5 sm:p-6 md:p-8 pt-12 sm:pt-14 md:pt-16 text-white text-center h-full flex flex-col">
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4">
                 Mission

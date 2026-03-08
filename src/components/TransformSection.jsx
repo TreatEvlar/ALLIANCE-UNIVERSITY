@@ -38,7 +38,6 @@ export default function TransformSection() {
       <div className="relative z-20 mt-0 md:-mt-24 lg:-mt-32 xl:-mt-40">
         <div className="max-w-6xl mx-auto bg-red-800 text-white sm:rounded-3xl px-4 sm:px-6 md:px-10 pt-12 sm:pt-14 md:pt-16 shadow-2xl relative z-30">
           
-          {/* Header with responsive lines */}
           <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4 mb-10 sm:mb-12 md:mb-16">
             <hr className="flex-1 max-w-15 sm:max-w-25 md:max-w-40 border-t-2 border-white/30 hidden xs:block" />
             <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-center">
@@ -48,9 +47,7 @@ export default function TransformSection() {
             <hr className="flex-1 max-w-15 sm:max-w-25 md:max-w-40 border-t-2 border-white/30 hidden xs:block" />
           </div>
 
-          {/* Mobile Layout (Stacked) */}
           <div className="block md:hidden">
-            {/* Image at top */}
             <div className="flex justify-center mb-8">
               <div className="w-40 sm:w-48">
                 <img 
@@ -61,7 +58,6 @@ export default function TransformSection() {
               </div>
             </div>
 
-            {/* All features in a single column */}
             <div className="space-y-4 pb-6">
               {features.map((f, i) => (
                 <div key={i} className="text-center bg-white/10 rounded-lg p-3">
@@ -74,11 +70,9 @@ export default function TransformSection() {
             </div>
           </div>
 
-          {/* Tablet Layout */}
           <div className="hidden md:block lg:hidden">
             <div className="grid grid-cols-2 gap-6 items-start">
               
-              {/* Left Column */}
               <div className="space-y-4">
                 {leftFeatures.map((f, i) => (
                   <div key={i} className="text-right bg-white/5 rounded-lg p-3">
@@ -90,7 +84,6 @@ export default function TransformSection() {
                 ))}
               </div>
 
-              {/* Center Image */}
               <div className="flex justify-center items-center">
                 <div className="w-32">
                   <img 
@@ -101,7 +94,6 @@ export default function TransformSection() {
                 </div>
               </div>
 
-              {/* Right Column */}
               <div className="col-span-2 mt-4 grid grid-cols-2 gap-4">
                 {rightFeatures.map((f, i) => (
                   <div key={i} className="text-left bg-white/5 rounded-lg p-3">
@@ -115,10 +107,8 @@ export default function TransformSection() {
             </div>
           </div>
 
-          {/* Desktop Layout (Original 3-column) */}
           <div className="hidden lg:grid lg:grid-cols-3 gap-6 xl:gap-8 items-start">
             
-            {/* Left Column - Right Aligned */}
             <div className="space-y-6">
               {leftFeatures.map((f, i) => (
                 <div key={i} className="text-right">
@@ -130,7 +120,6 @@ export default function TransformSection() {
               ))}
             </div>
 
-            {/* Center Image */}
             <div className="flex justify-center items-center">
               <img 
                 src={centerImage} 
@@ -139,7 +128,6 @@ export default function TransformSection() {
               />
             </div>
 
-            {/* Right Column - Left Aligned */}
             <div className="space-y-6">
               {rightFeatures.map((f, i) => (
                 <div key={i} className="text-left">

@@ -13,7 +13,6 @@ import Footer from '../components/Footer'
 
 function Home() {
   return (
-    // done
     <div className="font-sans">
         <Navbar />
         <Hero />
