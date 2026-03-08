@@ -35,11 +35,13 @@ export default function FAQ() {
     <section className="w-full bg-white py-16 px-4 md:px-8">
       <div className="max-w-4xl mx-auto">
         
-        <h2 className="text-4xl md:text-4xl font-medium text-gray-900 text-center mb-12 flex items-center justify-center gap-4">
-          <hr className="w-40 border"/>
-          <span className="text-orange-800">FAQ</span>
-          <hr className="w-40 border"/>
-        </h2>
+        <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4 mb-10 sm:mb-12">
+          <hr className="flex-1 max-w-15 sm:max-w-25 md:max-w-40 border-t-2 border-gray-300 hidden sm:block" />
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-[#0A192F] flex flex-wrap items-center justify-center gap-1 sm:gap-2">
+            <span className="text-orange-800 whitespace-nowrap">FAQ</span>
+          </h2>
+          <hr className="flex-1 max-w-15 sm:max-w-25 md:max-w-40 border-t-2 border-gray-300 hidden sm:block" />
+        </div>
 
         
         <div className="space-y-4">
