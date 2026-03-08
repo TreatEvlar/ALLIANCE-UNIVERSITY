@@ -1,3 +1,5 @@
+import CAMPUS from "../assets/campus.png";
+
 export default function AboutMBA() {
   return (
     <section className="py-12 px-4 md:py-16 md:px-10 bg-white">
@@ -12,24 +14,35 @@ export default function AboutMBA() {
           </div>
         </div>
 
-        <div className="bg-red-800 text-white p-8 sm:p-12 md:p-18 rounded-3xl md:rounded-l-full flex-1 md:-ml-20 mt-6 md:mt-0 w-full">
-          <p className="text-base sm:text-lg leading-relaxed">
-            The MBA program at Alliance Online is a comprehensive two-year
-            postgraduate course designed to cultivate leadership, strategic
-            thinking, and analytical skills. It offers electives in areas such
-            as Marketing, Finance, Human Resource Management, Operations and
-            Business Analytics.
-          </p>
-
-          <div className="mt-6 space-y-2">
-            <p className="text-base sm:text-lg">
-              <span className="font-bold">Duration:</span> 2 Years
+        <div className="red-div bg-red-800 text-white p-8 sm:p-12 md:p-18 rounded-3xl md:rounded-l-full flex-1 md:-ml-20 mt-6 md:mt-0 w-full z-100 relative overflow-hidden">
+          
+          {/* Campus image behind the red div content */}
+          <img
+            src={CAMPUS}
+            alt="Campus Background"
+            className="absolute inset-0 w-full h-full object-cover opacity-30"
+          />
+          
+          {/* Content on top of the image */}
+          <div className="relative z-10">
+            <p className="text-base sm:text-lg leading-relaxed">
+              The MBA program at Alliance Online is a comprehensive two-year
+              postgraduate course designed to cultivate leadership, strategic
+              thinking, and analytical skills. It offers electives in areas such
+              as Marketing, Finance, Human Resource Management, Operations and
+              Business Analytics.
             </p>
 
-            <p className="text-base sm:text-lg">
-              <span className="font-bold">Eligibility:</span> Bachelor's degree
-              with minimum 50% marks (45% for SC/ST candidates)
-            </p>
+            <div className="mt-6 space-y-2">
+              <p className="text-base sm:text-lg">
+                <span className="font-bold">Duration:</span> 2 Years
+              </p>
+
+              <p className="text-base sm:text-lg">
+                <span className="font-bold">Eligibility:</span> Bachelor's degree
+                with minimum 50% marks (45% for SC/ST candidates)
+              </p>
+            </div>
           </div>
         </div>
       </div>

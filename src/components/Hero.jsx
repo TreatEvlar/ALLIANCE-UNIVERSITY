@@ -1,10 +1,18 @@
 import HeroIMG from "../assets/hero-img.png";
+import CAMPUS from "../assets/campus.png";
 
 export default function Hero() {
     return (
         <section className="relative pt-24 sm:pt-32 md:pt-42 pb-12 sm:pb-16 md:pb-20 overflow-hidden">
 
-            <div className="absolute left-1/3 md:left-120 top-0 w-[200%] sm:w-[150%] md:w-[85%] h-40 sm:h-60 md:h-100 bg-red-800 rounded-r-full rotate-150 opacity-50 md:opacity-100"></div>
+            {/* Decorative red div with campus image behind it */}
+            <div className="absolute left-1/3 md:left-120 top-0 w-[200%] sm:w-[150%] md:w-[85%] h-40 sm:h-60 md:h-100 bg-red-800 rounded-r-full rotate-150 opacity-50 md:opacity-100 overflow-hidden">
+                <img
+                    src={CAMPUS}
+                    alt="Campus Background"
+                    className="w-full h-full object-cover opacity-30 scale-y-[-1]"
+                />
+            </div>
 
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 md:px-10 grid md:grid-cols-2 items-center gap-8 md:gap-0">
 
